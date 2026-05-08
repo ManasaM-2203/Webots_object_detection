@@ -1,0 +1,130 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.686486112206099 -0.06297327576511517 0.7244109222586071 3.2743061060967653
+  position 0.1833653212000837 0.24056328988182848 4.406687112462741
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+E-puck {
+  hidden position_0_0 2981.557905271157
+  hidden position_0_1 3564.7609018337944
+  hidden linearVelocity_0 0.030141990453952144 -0.07412130795516254 6.758123625750067e-09
+  hidden angularVelocity_0 0.0009678306529178273 0.000393578848260282 1.860786604677479e-08
+  hidden rotation_1 0 1 0 3.3280696680328794
+  hidden linearVelocity_1 0.030143957274547727 -0.07412614681031796 -7.145302397567309e-11
+  hidden angularVelocity_1 3.7063073406722604 1.5071978513145485 9.708862235117626e-08
+  hidden rotation_2 0 -0.9999999999999999 0 4.088352644210741
+  hidden linearVelocity_2 0.03014395908077799 -0.0741261465673705 9.067692467067791e-11
+  hidden angularVelocity_2 3.7063072987437335 1.507197954467993 -7.675860082902337e-08
+  translation 0.2364145130143478 -0.010809559093861732 -0.010063953495365652
+  rotation -0.00046205742648019674 -0.0006867044256522744 0.9999996574699245 -1.1845641969499132
+  controller "my_controller12"
+}
+SolidBox {
+  translation -0.24 -0.03 0.05
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+Floor {
+  translation 0 0 -0.01
+  size 1 1
+}
+SolidBox {
+  translation -0.26 0.24 0.05
+  name "box(1)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.26 -0.3 0.0499997
+  rotation 1 0 0 4.692820414042842e-06
+  name "box(2)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+Wall {
+  translation -0.02 0.49 -0.02
+  rotation 1 0 0 4.692820414042842e-06
+  size 1 0.02 0.2
+  appearance Roughcast {
+    colorOverride 0.3 0.3 0.3
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -0.02 -0.51 -0.02
+  name "wall(1)"
+  size 1 0.02 0.2
+  appearance Roughcast {
+    colorOverride 0.3 0.3 0.3
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -0.5 -0.01 0
+  name "wall(2)"
+  size 0.02 1 0.2
+  appearance Roughcast {
+    colorOverride 0.3 0.3 0.3
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.48 -0.01 -0.02
+  rotation 0 1 0 4.6928e-06
+  name "wall(3)"
+  size 0.02 1 0.2
+  appearance Roughcast {
+    colorOverride 0.3 0.3 0.3
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
